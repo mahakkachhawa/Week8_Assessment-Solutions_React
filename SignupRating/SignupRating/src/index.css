@@ -1,0 +1,97 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef1f6;
+  color: #1f2937;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card-title { margin: 0 0 20px; text-align: center; font-size: 26px; color: #111827; }
+
+.section { padding: 16px 0; border-top: 1px solid #e5e7eb; }
+.section:first-of-type { border-top: none; }
+.section-heading { margin: 0 0 10px; font-size: 18px; }
+
+.badge {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.badge-functional { background: #dbeafe; color: #1d4ed8; }
+.badge-class { background: #ede9fe; color: #6d28d9; }
+
+.field { margin-bottom: 14px; }
+.field label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 600; }
+.checkbox-row { display: flex; align-items: center; gap: 8px; }
+.checkbox-row label { margin: 0; font-weight: 500; }
+
+.text-input {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+.text-input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px #bfdbfe; }
+
+.password-row { display: flex; gap: 8px; }
+
+.button-row { display: flex; gap: 10px; margin-top: 8px; }
+
+.primary-btn, .secondary-btn {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.primary-btn { border: none; background: #2563eb; color: #fff; }
+.primary-btn:hover { background: #1d4ed8; }
+.secondary-btn { border: 1px solid #d1d5db; background: #fff; color: #374151; }
+.secondary-btn:hover { background: #f3f4f6; }
+
+.strength { margin: 6px 0 0; font-size: 13px; font-weight: 600; }
+.strength-weak { color: #dc2626; }
+.strength-medium { color: #d97706; }
+.strength-strong { color: #15803d; }
+
+.message { margin: 6px 0 0; font-size: 14px; font-weight: 500; }
+.message-ok { color: #15803d; }
+.message-error { color: #dc2626; }
+
+.stars { display: flex; gap: 6px; margin-bottom: 8px; }
+.star-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #d1d5db;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.star-filled { color: #f59e0b; border-color: #fcd34d; background: #fffbeb; }
+.rating-text { margin: 4px 0 10px; font-size: 14px; color: #4b5563; }
